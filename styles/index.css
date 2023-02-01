@@ -5,23 +5,25 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
+/* orange square container */
 .square {
     background-color: #F48C06;
     min-width: 468px;
-    height: 160px;
+    min-height: 160px;
     border-radius: 5px;
-    margin: 20px 20px;
     display: flex;
 }
 
+/* red squares inside orange container */
 .square__inside {
     background-color: #9D0208;
     min-width: 78px;
-    height: 78px;
+    min-height: 78px;
     border-radius: 3px;
     margin: 20px;
 
@@ -29,6 +31,7 @@
     color: white;
     text-align: center;
     font-size: 12px;
+    line-height: 5;
 }
 
 .square--one {
@@ -48,6 +51,7 @@
 
 .square--four {
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .square--last {
@@ -64,7 +68,8 @@
 }
 
 .square--shrink {
-    flex-shrink: 1.5;
+    line-height: 3;
+    max-height: 64px;
 }
 
 .square--six {
