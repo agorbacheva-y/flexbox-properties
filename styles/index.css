@@ -10,7 +10,7 @@
     gap: 20px;
 }
 
-/* orange square container */
+/*  orange square container */
 .square {
     background-color: #F48C06;
     min-width: 468px;
@@ -19,7 +19,7 @@
     display: flex;
 }
 
-/* red squares inside orange container */
+/*  red squares inside orange container */
 .square__inside {
     background-color: #9D0208;
     min-width: 78px;
@@ -59,6 +59,7 @@
     align-self: flex-end;
 }
 
+/*  cannot get it to align baseline?? */ 
 .square--five {
     justify-content: center;
     align-items: baseline;
@@ -81,3 +82,6 @@
 .square--grow {
     flex-grow: 2;
 }
+
+/*  need to align box 5 baseline
+    adjust spacing between red boxes to 20px */
