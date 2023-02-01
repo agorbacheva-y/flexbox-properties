@@ -1,0 +1,22 @@
+.container {
+    background-color: #370617;
+    min-height: 100vh;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.square {
+    background-color: #F48C06;
+    min-width: 468px;
+    height: 160px;
+    border-radius: 5px;
+    margin: 20px 20px;
+
+    display: flex;
+}
+
