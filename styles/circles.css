@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-.main-screen {
-    background-color: #FAA307;
-    min-height: 100vh;
-    max-width: 100%;
-}
-
 
 .container {
+    background-color: #FAA307;
     min-height: 100vh;    
-    width: 80%;
-    gap: 20px;
+    width: 100%;
+    gap: 10px 20px;
     margin: auto;
 
     display: flex;
@@ -32,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px 20px;
+    gap: 20px;
 }
 
 .box--one, .box--three, .box--five {
@@ -49,6 +44,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    
 }
 
 /* box one */
@@ -60,7 +56,7 @@
 /* box two */
 .box--two {
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-wrap: wrap-reverse;
 }
 
@@ -68,6 +64,11 @@
 .box--three {
     justify-content: space-between;
     align-content: space-between;
+}
+
+/* line break to move box four to second row */
+.break {
+    flex-basis: 100%;
 }
 
 /* box four */
@@ -82,9 +83,11 @@
     align-items: center;
 }
 
-/* box six (hidden) */
+/* box six (placeholder so boxes in row appear flex-start */
 .box--six {
     visibility: hidden;
 }
+
+
 
 /* need to fix row gap between circles... */
