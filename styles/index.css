@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     background-color: #370617;
     min-height: 100vh;
@@ -17,6 +23,8 @@
     min-height: 160px;
     border-radius: 5px;
     display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
 /*  red squares inside orange container */
@@ -25,7 +33,6 @@
     min-width: 78px;
     min-height: 78px;
     border-radius: 3px;
-    margin: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     font-family: 'Roboto', sans-serif;
@@ -83,5 +90,4 @@
     flex-grow: 2;
 }
 
-/*  need to align box 5 baseline
-    adjust spacing between red boxes to 20px */
+/*  need to align box 5 baseline */
