@@ -26,6 +26,14 @@
 .box {
     width: 273px;
     height: 220px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box--one, .box--three, .box--five {
@@ -42,5 +50,37 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    display: inline-flex;
 }
+
+/* box one */
+.box--one {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* box two */
+.box--two {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+/* box three */
+.box--three {
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+/* box four */
+.box--four {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* box five */
+.box--five {
+    justify-content: center;
+    align-items: center;
+}
+
+/* need to fix row gap between circles... */
