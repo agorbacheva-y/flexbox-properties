@@ -39,7 +39,6 @@
     color: white;
     text-align: center;
     font-size: 12px;
-    line-height: 5;
 }
 
 .square--one {
@@ -73,12 +72,14 @@
 }
 
 .square--stretch {
+    line-height: 5;
     align-self: stretch;
 }
 
 .square--shrink {
     line-height: 3;
-    max-height: 64px;
+    transform: scaleY(0.8);
+    align-self: center;
 }
 
 .square--six {
@@ -88,6 +89,5 @@
 
 .square--grow {
     flex-grow: 2;
+    max-width: 156px;
 }
-
-/*  need to align box 5 baseline */
