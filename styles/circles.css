@@ -4,8 +4,28 @@
     box-sizing: border-box;
 }
 
-.container {
+.main-screen {
     background-color: #FAA307;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+
+.container {
+    min-height: 100vh;    
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* navy and red boxes */
+.box {
+    width: 273px;
+    height: 220px;
 }
 
 .box--one, .box--three, .box--five {
@@ -14,4 +34,13 @@
 
 .box--two, .box--four {
     background-color: #6A040F;
+}
+
+/* cirlces inside boxes */
+.box__circle {
+    background-color: #748CAB;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-flex;
 }
