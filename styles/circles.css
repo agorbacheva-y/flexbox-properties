@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #FAA307;
+}
+
+.box--one, .box--three, .box--five {
+    background-color: #03071E;
+}
+
+.box--two, .box--four {
+    background-color: #6A040F;
+}
