@@ -20,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 /* navy and red boxes */
@@ -31,9 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    gap: 20px 20px;
 }
 
 .box--one, .box--three, .box--five {
@@ -81,6 +80,11 @@
 .box--five {
     justify-content: center;
     align-items: center;
+}
+
+/* box six (hidden) */
+.box--six {
+    visibility: hidden;
 }
 
 /* need to fix row gap between circles... */
