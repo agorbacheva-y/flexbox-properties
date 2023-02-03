@@ -4,21 +4,30 @@
     box-sizing: border-box;
 }
 
-
-.container {
+/* main screen */ 
+.screen {
     background-color: #FAA307;
     min-height: 100vh;    
     width: 100%;
-    gap: 10px 20px;
-    /* margin: auto; */
 
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
-/* navy and red boxes */
+/* cohtainer for boxes */
+.container {
+    width: 860px;
+    height: 460px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 20px;
+}
+
+/* boxes */
 .box {
     width: 273px;
     height: 220px;
@@ -27,16 +36,17 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px;
+    gap: 20px;    /* not applying to row?? */
 }
 
-.box--one, .box--three, .box--five {
+.box:nth-child(odd) {
     background-color: #03071E;
 }
 
-.box--two, .box--four {
+.box:nth-child(even) {
     background-color: #6A040F;
 }
+
 
 /* cirlces inside boxes */
 .box__circle {
@@ -44,7 +54,6 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    
 }
 
 /* box one */
@@ -66,11 +75,6 @@
     align-content: space-between;
 }
 
-/* line break to move box four to second row */
-.break {
-    flex-basis: 100%;
-}
-
 /* box four */
 .box--four {
     justify-content: space-between;
@@ -82,12 +86,5 @@
     justify-content: center;
     align-items: center;
 }
-
-/* box six (placeholder so boxes in row appear flex-start */
-.box--six {
-    visibility: hidden;
-}
-
-
 
 /* need to fix row gap between circles... */
