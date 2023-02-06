@@ -23,7 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; 
-    align-items: center;
+    align-content: center;
     gap: 20px;
 }
 
@@ -36,7 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px;    /* not applying to row?? */
+    gap: 20px;
 }
 
 .box:nth-child(odd) {
@@ -59,13 +59,13 @@
 /* box one */
 .box--one {
     justify-content: flex-start;
-    align-items: flex-start;
+    align-content: flex-start;
 }
 
 /* box two */
 .box--two {
     justify-content: flex-end;
-    align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap-reverse;
 }
 
@@ -77,14 +77,12 @@
 
 /* box four */
 .box--four {
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 /* box five */
 .box--five {
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
-
-/* need to fix row gap between circles... */
